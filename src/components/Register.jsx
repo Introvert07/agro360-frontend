@@ -21,17 +21,18 @@ export default function Register() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    try {
-      const res = await axios.post("http://localhost:5000/api/auth/register", formData);
-      alert("✅ Registered successfully!");
-      navigate("/login");
-    } catch (err) {
-      console.error(err);
-      alert("❌ Registration failed. Try again.");
-    }
-  };
+  try {
+    const res = await axios.post("https://agro360-backend.vercel.app/api/auth/register", formData);
+    alert("✅ Registered successfully!");
+    navigate("/login");
+  } catch (err) {
+    console.error(err);
+    alert("❌ Registration failed. Try again.");
+  }
+};
+
 
   return (
     <div
