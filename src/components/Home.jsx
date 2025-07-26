@@ -145,15 +145,15 @@ export default function Home() {
                   to="/crop-doctor"
                   className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg flex items-center gap-2"
                 >
-                  🚜 Try Now
+                  Diagnosis Plant
                 </Link>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }}>
                 <Link
-                  to="/dashboard"
+                  to="/fertilizers"
                   className="bg-white text-gray-800 border border-gray-300 px-6 py-3 rounded-lg font-semibold shadow-sm hover:shadow-md flex items-center gap-2"
                 >
-                  📊 Dashboard
+                   All Fertilizer
                 </Link>
               </motion.div>
             </div>
