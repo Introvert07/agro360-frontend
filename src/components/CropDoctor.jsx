@@ -1,21 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
+import CropDoctorAPI from "./CropDoctorAPI";
 
 const CropDoctor = () => {
   return (
-    <motion.div
+    <>
+   <section className="flex flex-col sm:pt-24 max-md:pt-10">
+        <motion.div
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="pt-10 relative min-h-screen bg-gradient-to-br from-green-50 via-white to-green-100 flex items-center justify-center px-6 py-16"
+      className="pt-10 relative min-h-screen bg-gradient-to-br from-green-50 via-white to-green-100 flex items-center justify-center sm:px-6 px-2 py-16"
     >
       {/* Shimmer background text */}
       <div className="absolute text-[120px] md:text-[200px] font-black text-green-100 opacity-20 select-none pointer-events-none -z-10">
         CROP
       </div>
 
-      <div className="text-center max-w-3xl p-6 rounded-3xl bg-white/80 shadow-2xl border border-green-100 backdrop-blur-sm">
-        <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-green-600 to-lime-500 bg-clip-text text-transparent mb-4">
+      <div className="text-center max-w-3xl sm:p-6 px-2 py-4 rounded-3xl bg-white/80 shadow-2xl border border-green-100 backdrop-blur-sm">
+        <h1 className="text-2xl md:text-5xl font-extrabold bg-gradient-to-r from-green-600 to-lime-500 bg-clip-text text-transparent mb-4">
           🌾 Crop Doctor
         </h1>
 
@@ -42,13 +45,20 @@ const CropDoctor = () => {
           </li>
         </ul>
 
+    <CropDoctorAPI/>
+
+
         <div className="mt-8">
           <span className="inline-block px-4 py-2 rounded-full bg-green-100 text-green-700 font-semibold text-sm shadow-md animate-pulse">
-            🚧 Feature under development — Coming Soon!
+            🚧 Feature under development
           </span>
         </div>
       </div>
     </motion.div>
+
+   </section>
+    </>
+ 
   );
 };
 

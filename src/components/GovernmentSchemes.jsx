@@ -122,7 +122,7 @@ export default function GovernmentSchemes() {
 
   return (
     <div className="mt-10 min-h-screen bg-gradient-to-br from-green-100 via-white to-green-50 px-6 md:px-20 py-16 text-black relative z-10">
-      <h1 className="text-4xl md:text-5xl font-bold text-green-900 mb-12 text-center drop-shadow-md">
+      <h1 className="text-2xl md:text-5xl font-bold text-green-900 mb-12 text-center drop-shadow-md">
         🌿 Government Schemes & Farmer Resources
       </h1>
 
