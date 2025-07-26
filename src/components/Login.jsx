@@ -88,12 +88,7 @@ const Login = () => {
           {loading ? "Logging in..." : "Login"}
         </button>
 
-        <p className="text-sm text-center text-white">
-          Don’t have an account?{" "}
-          <span className="text-blue-200 cursor-pointer hover:underline">
-            Register
-          </span>
-        </p>
+       
       </form>
     </div>
   );
